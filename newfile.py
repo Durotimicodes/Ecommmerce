@@ -1,4 +1,6 @@
 
+import random
+
 """
 Fundamentals of Python
 
@@ -35,3 +37,18 @@ def myfunc():
 myfunc()
 
 print(x)
+
+"""
+DATA TYPES
+you can not convert complex numbers into another number type
+"""
+X = ["apple", "banana", "cherry"] #LIST
+y = {"apple", "banana", "strawberry"} #SET
+D = frozenset({"apple", "easy pillers", "orange"}) #frozenset
+T = ("girl", "boy", "infant") #tuple
+Z = range(10) #range
+r = {"name": "Oluwadurotimi", "Age": 29} #dict
+U = bytearray(5) #bytearray
+h = memoryview(bytes(5))
+
+print("random Nos: ", random.randrange(1, 10))
