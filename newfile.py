@@ -63,8 +63,15 @@ if "ee" not in txt:
     print("No", "not present")
 else:
     print("present")
-#format mehtod
+#methods
+#.lower, .upper, .format, ,.strip
 
 age = 36
 txt = "My name is Timi, and I am {}"
 print(txt.format(age))
+
+quantity = 5
+item = 576
+price = 50.67
+order = "I want to pay {2} dollars for {0} pieces of items {1}."
+print(order.format(quantity,item, price))
