@@ -51,4 +51,20 @@ r = {"name": "Oluwadurotimi", "Age": 29} #dict
 U = bytearray(5) #bytearray
 h = memoryview(bytes(5))
 
-print("random Nos: ", random.randrange(1, 10))
+print("random Nos: ", random.randrange(1, 20))
+
+for i in "Oluwadurotimi":
+    print(len(i))
+    break
+#in 
+#not in
+txt = "the best things in life are free"
+if "ee" not in txt:
+    print("No", "not present")
+else:
+    print("present")
+#format mehtod
+
+age = 36
+txt = "My name is Timi, and I am {}"
+print(txt.format(age))
