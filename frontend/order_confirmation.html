@@ -1,0 +1,8 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+    <h1>Order Confirmation</h1>
+    <p>Product: {{ order.product.name }}</p>
+    <p>Quantity: {{ order.quantity }}</p>
+    <p>Total price: ${{ order.total_price }}</p>
+    <p>Order created at: {{ order.created_at }}</p

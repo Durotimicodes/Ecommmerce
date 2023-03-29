@@ -1,0 +1,17 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+    {% for product in products %}
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>Price: ${{ product.price }}</p>
+        <form method="post" action="{% url 'store:new_order' %}">
+            {% csrf_token %}
+            <input type="hidden" name="product" value="{{ product.id }}">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <button type="submit">Order</button>
+        </form>
+        <hr>
+    {% endfor %}
+{% endblock %}
